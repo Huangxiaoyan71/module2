@@ -1,0 +1,86 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  width: 1000px;
+  min-height: 720px;
+  margin: 0 auto;
+  margin-top: 20px;
+  flex-direction: row;
+  border: 1px solid #888888;
+}
+
+.controll-box {
+  position: relative;
+  display: flex;
+  width: 50%;
+  flex: 1;
+  border-right: 1px solid #888888;
+  justify-content: center;
+  align-items: center;
+}
+.controll-box:last-child {
+  border: none;
+}
+
+.btn-group {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.btn {
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  padding: 0 10px;
+  margin: 0 4px;
+  background: #cccccc;
+  cursor: pointer;
+  color: #333333;
+  border-radius: 4px;
+  user-select: none;
+}
+
+.edit-box {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.editor {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  color: #cccccc;
+  background: #444444;
+  text-align: left;
+}
+
+.screen-box {
+  display: flex;
+  width: 405px;
+  height: 700px;
+  background: #333333;
+  border-radius: 26px;
+  justify-content: center;
+  align-items: center;
+}
+
+.screen-content {
+  display: flex;
+  width: 375px;
+  height: 600px;
+  background: #ffffff;
+  overflow: auto;
+}
+
+.preview-iframe {
+  height: 100%;
+  width: 100%;
+  border: none;
+}
